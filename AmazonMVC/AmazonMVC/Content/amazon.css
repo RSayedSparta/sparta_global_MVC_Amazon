@@ -1,124 +1,268 @@
-﻿@-moz-document url-prefix("https://www.amazon.com/dp"), url-prefix("https://www.amazon.com/gp/video/"), url-prefix("https://www.amazon.com/gp/product/"), domain("amazon.com"), domain("amazon.com.br"), domain("amazon.ca"), domain("amazon.cn"), domain("amazon.fr"), domain("amazon.de"), domain("amazon.it"), domain("amazon.co.jp"), domain("amazon.es"), domain("amazon.co.uk"), domain("smile.amazon.com") {
-    a, a:link, a:visited {
-        color: #fb0 !important;
+﻿h1 {
+    padding-top: 40px;
+    font-weight: bold;
+}
+
+button {
+    background: rgba(0,0,0,0);
+    font-size: 20px;
+}
+
+table {
+    width: 100%;
+}
+
+li {
+    list-style-type: none;
+}
+
+.easy, .medium, .hard {
+    text-align: center;
+}
+
+.description {
+    text-align: center;
+    padding: 12%;
+}
+
+.levels {
+    padding-top: 10%;
+}
+
+.score {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.text {
+    font-size: 18px;
+}
+
+*:focus {
+    outline: none;
+}
+
+.footer {
+    padding: 30px;
+    padding-top: 30px;
+    font-size: 20px;
+}
+
+.letters {
+    text-decoration: none;
+    padding: 20px;
+}
+
+.grid {
+    font-size: 50px;
+    text-align: center;
+    padding: 30px;
+}
+
+.display_letters {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    height: 50px;
+}
+
+.clear {
+    padding: 50px;
+}
+/* #words{
+list-style: none;
+} */
+
+.not, .ton, .out, .nut, .unto, .see,
+.secure, .curse, .reuse, .cure, .seer,
+.sure, .cue, .use, .user, .rue, .rescue,
+.thee, .there, .here, .tree, .her, .three,
+.the {
+    border-style: solid;
+    border-width: thin;
+    border-radius: 10px;
+    border-color: rgba(0,0,0,1);
+    color: rgba(0, 0, 0, 0);
+}
+
+.btn {
+    position: relative;
+    padding: 1.4rem 4.2rem;
+    padding-right: 3.1rem;
+    font-size: 30px;
+    color: var(--inv);
+    letter-spacing: 1.1rem;
+    text-transform: uppercase;
+    transition: all 300ms cubic-bezier(0.77, 1, 0.275, 1);
+    cursor: pointer;
+    user-select: none;
+}
+
+    .btn:before, .btn:after {
+        content: '';
+        position: absolute;
+        transition: inherit;
+        z-index: -1;
     }
 
-        a.dv-play-btn-content, .a-dropdown-common .a-dropdown-link, a#uh-title {
-            color: #000 !important;
+    .btn:hover {
+        color: var(--def);
+        transition-delay: .6s;
+    }
+
+        .btn:hover:before {
+            transition-delay: 0s;
         }
 
-    html, .dv-episode-container, .main-tv .dv-dp-top-wrapper, #nav-subnav, #dv-cl-breadcrumb,
-    #dv-cl-top-bar, #aiv-cl .dv-cl-grid-outer {
-        background: #232F3E !important;
-    }
-
-        .dv-el-title, p.a-color-base, .a-checkbox label, .a-radio label, .dv-simple-synopsis p, #dv-cl-breadcrumb .dv-cl-breadcrumb-text {
-            color: #f1f1f1 !important;
-            font-size: x-large;
-            line-height: 125%;
+        .btn:hover:after {
+            background: var(--inv);
+            transition-delay: .4s;
         }
 
-    .a-size-mini {
-        font-size: x-large;
-        line-height: 125%;
-    }
 
-    .dp-main h1 .num-of-seasons, .dp-main h1 .release-year, .dv-el-badge, .dv-el-attr-key,
-    .dv-el-attr-value, .aiv-container-limited.tancaccept {
-        color: #feb !important;
-    }
+.from-top:before,
+.from-top:after {
+    left: 0;
+    height: 0;
+    width: 100%;
+}
 
-    #ybh.desktop .asin-title, #ybh.tablet .asin-title, #rhf .ybh-fresh-link {
-        color: #7b81ff !important;
-    }
+.from-top:before {
+    bottom: 0;
+    border: 1px solid var(--inv);
+    border-top: 0;
+    border-bottom: 0;
+}
 
-    #navbar, #nav-main, body, html, .a-popover-inner, #suggestions-template, .dv-dp-top-wrapper, .nav-search-submit, #pagn, #hows-my-search, .rhfWrapper, .rhfHistoryWrapper, #rhfDividerColumn, #white-mask, .history-text, .nav-flyout-sidePanel-content, #nav-flyout-yourAccount, #nav-flyout-wishlist, #nav-flyout-cart, .click_region, #cbcc_banner, #hl-confirm-text, .a-box, .benefits-container, #spc-imb, .nav-catFlyout, .nav-flyout-content, .nav-promo, .small, #nav-subnav, a.a-link-section-expander, #nav-belt, .nav-signin-tt, .a-alert-info .a-alert-container, .a-box-group > .a-box:first-child > .a-box-inner, #bbopAndCartBox, .nav-bluebeacon .ewc-beacon #ewc #ewc-checkout, .ewc-style .ewc-section-expander > .ewc-expander-header a, #btfContent, .a-box-title .a-box-inner, #actionPanelWrapper, .payment-row, .a-box-inner, .a-form-actions, ul.a-tabs li:first-child a, #huc-v2-order-row-items, #huc-v2-order-row-messages, .huc-v2-upsell-item-slide, input[type="text"], .a-search input, .nav-flyout, .hud-feed-carousel .hud-feed-carousel-viewport, .feed-carousel .feed-carousel-viewport, .deals-shoveler.fresh-shoveler, #btfContent, .btfContent, #gw-content-grid-bottom > div, #gw-content-grid-top > div, .displayAd, .s-item-container, .imageInformation, table.a-keyvalue th, #pageContent, .gw-card-layout .a-cardui, .adcenterRowWrapper, .billboardRowWrapper, .desktop-row {
-        background: black !important;
-    }
+.from-top:after {
+    top: 0;
+    height: 0;
+}
 
-    .a-price {
-        color: #f07700;
-    }
+.from-top:hover:before,
+.from-top:hover:after {
+    height: 100%;
+}
 
-    ul.a-tabs li:first-child a {
-        border-color: #d2d2d2 #ddd #ddd !important;
-    }
+.from-left:before,
+.from-left:after {
+    top: 0;
+    width: 0;
+    height: 100%;
+}
 
-    #pageContent .sidebar, #sidebar, .landingpage .white-gray-bg, #hud-dashboard, .a-accordion, .a-accordion-active, .a-accordion-inner {
-        background-color: rgba(0,0,0,0);
-        background: rgba(0,0,0,0) !important;
-    }
+.from-left:before {
+    right: 0;
+    border: 1px solid var(--inv);
+    border-left: 0;
+    border-right: 0;
+}
 
-        .rhf-divider-inner, #upsell-section-divider, .a-divider-inner, .cbcc_box, .adStripe2, .poll-widget, #nav-flyout-prime, .srch_sggst_flyout, #nav-upnav, #sidebar, #sidebar::before, a.iss-banner-ad, #header.a-row.banner-border, #smTabCDiv, .rhf-divider, .a-button-primary::after, .a-button::after {
-            display: none !important;
-        }
+.from-left:after {
+    left: 0;
+}
 
-    #main, #suggestions-template, .a-color-base, #leftNav a:hover, #nav-search, .click_region, h3, .upsell_title_post, .a-carousel-pagination, .a-alert-container, #sc-about, h2, .byline, .a-checkbox-label, .sc-product-creator, #spc-order-summary, .a-size-medium, .a-text-center, .a-fixed-right-flipped-grid, #centerCol, #feature-bullets, .a-list-item, .a-section, .small, .nav-a:hover, .a-spacing-medium, .num-orders-for-orders-by-date, a.item:hover, .a-text-bold, .a-spacing-extra-large, .a-row, #miniATF_titleLink:hover, .navFooterColHead, .nav-tpl-itemList .nav-link:hover .nav-text, #feature-bullets-atf li span, ul.a-tabs li:first-child a, a:link, .nav-tpl-itemList .nav-link .nav-text, .huc-v2-order-row .huc-v2-scarcity, #productDescription .aplus p, #gw-content-grid .fresh-shoveler .as-title-block .a-color-base {
-        color: #d2d2d2 !important;
-    }
+.from-left:hover:before,
+.from-left:hover:after {
+    width: 100%;
+}
 
-    .s-selected, ul.a-tabs {
-        background: #161616 !important;
-    }
 
-    #leftNav a, #rhf_nav_back, a.item, #signin-slot, #nav-cart-flyout.nav-empty .nav-dynamic-empty, .postContent, #quickPromoBucketContent .qpUL, #fbt_x_title, .bxgy-byline-text, div.bucket, #miniATF_titleLink, body, .rhf-sign-in-title {
-        color: gray !important;
-    }
+.from-right:before,
+.from-right:after {
+    top: 0;
+    width: 0;
+    height: 100%;
+}
 
-    .nav-search-field, .nav-searchbar .nav-active, .nav-search-scope, .nav-search-label, .nav-search-facade, .nav-searchbar, #twotabsearchtextbox, .nav-focus, #searchOrdersInput {
-        background: #161616 !important;
-        color: white !important;
-        border: none !important;
-        box-shadow: none !important;
-    }
+.from-right:before {
+    left: 0;
+    border: 1px solid var(--inv);
+    border-left: 0;
+    border-right: 0;
+}
 
-    #leftNav .seeMore, .boldRefinementLink, .a-color-state, #leftNav h2 {
-        color: #4682B4 !important;
-    }
+.from-right:after {
+    right: 0;
+}
 
-    #s-result-info-bar, .a-alert-info .a-alert-container {
-        border: 1px #161616 solid !important;
-        box-shadow: none !important;
-    }
+.from-right:hover:before,
+.from-right:hover:after {
+    width: 100%;
+}
 
-    .s-suggestion:hover, #miniATFUDP, .wl-list.selected {
-        background: black !important;
-        border: 1px white solid !important;
-    }
 
-    .s-highlight-primary {
-        color: #4682B4 !important;
-    }
+.from-middle:before {
+    top: 0;
+    left: 50%;
+    height: 100%;
+    width: 0;
+    border: 1px solid var(--inv);
+    border-left: 0;
+    border-right: 0;
+}
 
-    #navbar #nav-flyout-ewc .nav-flyout-tail {
-        background: #404040 !important;
-    }
+.from-middle:after {
+    bottom: 0;
+    left: 0;
+    height: 0;
+    width: 100%;
+    background: var(--inv);
+}
 
-    #nav-logo-borderfade {
-        background: gray !important;
-    }
+.from-middle:hover:before {
+    left: 0;
+    width: 100%;
+}
 
-    .a-button, .a-button-text, .nav-action-button, .nav-action-button:link, .rhf-sign-in-button .action-inner, span.btn-prim-med-ra span input {
-        -moz-appearance: none !important;
-        background: linear-gradient(#333, #000) !important;
-        border: 1px #444 solid !important;
-        color: #999 !important;
-        box-shadow: none !important;
-    }
+.from-middle:hover:after {
+    top: 0;
+    height: 100%;
+}
 
-        .nav-action-button .nav-action-inner, .nav-action-button:link .nav-action-inner {
-            color: #999 !important;
-        }
+.from-bottom:before,
+.from-bottom:after {
+    left: 0;
+    height: 0;
+    width: 100%;
+}
 
-    .rhf-sign-in-button .action-inner {
-        text-shadow: unset !important;
-    }
+.from-bottom:before {
+    top: 0;
+    border: 1px solid var(--inv);
+    border-top: 0;
+    border-bottom: 0;
+}
 
-        .a-button:hover, .a-button-text:hover, .nav-action-button:hover, .nav-action-button:link:hover, .rhf-sign-in-button .action-inner:hover, span.btn-prim-med-ra span input:hover {
-            background: #222 !important;
-        }
+.from-bottom:after {
+    bottom: 0;
+    height: 0;
+}
 
-    .list-address-selected {
-        background-color: #3030D8;
-    }
+.from-bottom:hover:before,
+.from-bottom:hover:after {
+    height: 100%;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    --def: #6697FE;
+    --inv: #fff;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(-25deg, #C16161 20%, #96BFC4 80%);
+    font-family: Andale Mono, monospace;
+}
+
+.endGame {
+    text-align: center;
+    padding-top: 25%;
+}
+
+#heading {
+    font-weight: bold;
+    font-size: 18px;
 }
