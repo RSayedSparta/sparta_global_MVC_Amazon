@@ -10,20 +10,23 @@ namespace AmazonMVC.Models
     {
         private string pName;
         private string pDescription;
+        private string pLink;
         private double pPrice;
 
         public string PName { get => pName; set => pName = value; }
         public string PDescription { get => pDescription; set => pDescription = value; }
         public double PPrice { get => pPrice; set => pPrice = value; }
+        public string PLink { get => pLink; set => pLink = value; }
 
         public Products()
         {
 
         }
 
-        public Products(string name, string description, double price)
+        public Products(string name, string link, string description, double price)
         {
             pName = name;
+            pLink = link;
             pDescription = description;
             pPrice = price;
         }

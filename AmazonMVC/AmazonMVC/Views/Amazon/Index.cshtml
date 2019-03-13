@@ -13,7 +13,7 @@
     @foreach (var item in prod)
     {
         <br />  
-        <li>@Html.ActionLink("Product Name: " + @item.PName, "Index", "Amazon", new { id = 1 })</li>
+        <li><a href="@item.PLink">@item.PName</a></li>
         <li>Product Description: @item.PDescription </li>
         <li>Product Price: @item.PPrice</li>
         <br />
